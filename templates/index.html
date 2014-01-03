@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+	{% block body %}
+		<div class="col-xs-6 text-center" style="margin-top: 155px;">
+			<form action="/" method="POST">
+                
+                <h3>
+                	<span class='col-xs-12' style="color:white; font-weight: bold;"> Onde voce esta ? </span>
+				</h3>
+
+				<div class="row text-center" style="margin-top: 25px;">
+					<input type='text' name='source'>
+                </div>
+
+                <h3>
+                	<span class='col-xs-12' style="color:white; font-weight: bold;"> Quanto pretende gastar? </span>
+				</h3>
+
+                <div class="row text-center" style="margin-top: 25px;">
+					<input type='number' name='value'>
+                </div>
+
+                <h3>
+					<span class='col-xs-12' style="color:white; font-weight: bold;"> Quantos dias pretende ficar? </span>
+                </h3>
+
+                <div class="row text-center" style="margin-top: 25px;">
+					<input type='number' name='days'>
+                </div>
+                
+                <div class="row" style="margin-top: 25px;">
+                	<div class="col-xs-12 text-center">
+                		<input type='submit' class="btn btn-default btn-lg" value="I'm felling lucky" name="Enviar"/>
+            		</div>
+            	</div>
+			</form>		
+		</div>
+		<div class="col-xs-6 text-center" style="margin-top: 150px;">
+			<img src={{ url_for('static', filename='logoRodrigo2.gif') }} alt="Logo"> 			
+		</div>
+	{% endblock %}
